@@ -1,0 +1,8 @@
+from flask import Flask, request, render_template_string, redirect, url_for, session, send_file
+import fitz  # PyMuPDF
+import docx
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import random
+import os
+import datetime
