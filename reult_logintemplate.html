@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #fff; padding: 50px; text-align: center; }
+        .result { background: #f8f9fa; padding: 30px; border-radius: 10px; display: inline-block; text-align: left; }
+        h3 { color: #333; }
+        pre { text-align: left; background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 6px; max-height: 300px; overflow-y: scroll; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h2>Result</h2>
+        <h3>Plagiarism Detected: {{ plagiarism }}%</h3>
+        <h3>Average AI-Generated Likelihood: {{ ai_score }}%</h3>
+        <h3>Content:</h3>
+        <pre>{{ content }}</pre>
+        <h3>AI Sentence Breakdown:</h3>
+        <ul>
+        {% for sentence, score in ai_chunks %}
+            <li><b>{{ score }}%</b> - {{ sentence }}</li>
+        {% endfor %}
+        </ul>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
+'''
