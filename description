@@ -1,0 +1,47 @@
+A powerful Flask-based web application that detects plagiarism percentage and AI-generated content in uploaded .pdf, .docx, .txt files, or manually entered text. It includes user registration/login, scan history tracking, and a modern UI — all in one file!
+
+🚀 Features
+✅ Upload files or paste text manually
+✅ Detect plagiarism percentage using cosine similarity
+✅ Estimate AI-generated text with sentence-wise breakdown
+✅ User login and registration system
+✅ View/download scan history per user
+✅ Clean, responsive UI using inline HTML/CSS
+✅ All logic in a single Python file (easy to deploy)
+
+📸 Screenshots
+Login Page
+
+Upload & Paste Interface
+
+Plagiarism + AI Score Output
+
+Sentence-wise AI Breakdown
+
+Scan History View
+
+🛠️ Tech Stack
+Python 3
+
+Flask (Web framework)
+
+PyMuPDF (PDF text extraction)
+
+python-docx (Word file parsing)
+
+scikit-learn (Cosine similarity, TF-IDF)
+
+HTML/CSS (Inline templates)
+
+Username: admin
+Password: password
+You can also register your own account.
+
+
+
+Edit
+python app.py
+Visit: http://localhost:5000
+
+
+
